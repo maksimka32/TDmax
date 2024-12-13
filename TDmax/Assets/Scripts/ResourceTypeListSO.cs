@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 [CreateAssetMenu(menuName = "ScriptableObjects/ResourceTypeList")]
-public class ResourceTypeList : ScriptableObject  // Виправлено на ScriptableObject
+    
+public class ResourceTypeListSO : ScriptableObject
 {
-   public List<ResourceType> resourceTypes; 
+        public List<ResourceTypeSO> list;
 }
