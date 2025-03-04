@@ -1,7 +1,7 @@
 using UnityEngine;
 public class BuildingManager : MonoBehaviour{
     private Camera mainCamera;
-    [SerializeField] private BuldingTypeSO buldingType;
+    [SerializeField] private BuildingTypeSO buildingType;
     private void Start() {
         mainCamera = Camera.main;
     }
@@ -9,11 +9,11 @@ public class BuildingManager : MonoBehaviour{
         Vector3 MousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
         MousePos.z = 0f;
         return MousePos;
-    }
+                }
     private void Update(){  
        if (Input.GetMouseButtonDown(0)) {
         Vector3 spawnPosition = GetMouseWorldPosition();
-        Instantiate(buldingType.prefab, spawnPosition, Quaternion.identity);
+        Instantiate (buildingType.prefab, spawnPosition, Quaternion.identity);
        }
     }
 }

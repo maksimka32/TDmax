@@ -14,3 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameString: 
   prefab: {fileID: 5191442329625139611, guid: 2fefd5c3159f2004ab22496be44cface, type: 3}
+  resourceGeneratorData:
+    TimerMax: 1
+    resourceType: {fileID: 11400000, guid: 5c89ecac42e4b6a4d9410fbc39ddec7e, type: 2}
